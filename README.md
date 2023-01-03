@@ -42,3 +42,13 @@ When creating a VNet, it is recommended that you use the address ranges enumerat
 ![VNet](docs/images/vnet.png)
 
 1. Run GitHub Actions workflow ```Deploy VNet```
+
+## Cleaning Up
+
+1. Launch [Cloud Shell](https://shell.azure.com/bash). (Open Link in New Tab)
+
+```COPY``` the following line 👇
+```
+curl -LJO https://raw.githubusercontent.com/mattbenecky/vnet/main/cleanup.sh && chmod +x cleanup.sh && ./cleanup.sh
+```
+```PASTE``` in [Cloud Shell](https://shell.azure.com/bash) & press ```ENTER```
