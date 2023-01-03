@@ -49,6 +49,6 @@ When creating a VNet, it is recommended that you use the address ranges enumerat
 
 ```COPY``` the following line 👇
 ```
-curl -LJO https://raw.githubusercontent.com/mattbenecky/vnet/main/cleanup.sh && chmod +x cleanup.sh && ./cleanup.sh
+curl -LJO https://raw.githubusercontent.com/mattbenecky/vnet/main/src/infra/cleanup.sh && chmod +x cleanup.sh && ./cleanup.sh
 ```
 ```PASTE``` in [Cloud Shell](https://shell.azure.com/bash) & press ```ENTER```
