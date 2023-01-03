@@ -1,0 +1,38 @@
+name: 'Validate VNet'
+
+on:
+
+  workflow_dispatch:
+
+permissions:
+  # Required permission to request OIDC JWT ID token from GitHub's OIDC provider
+  contents: read
+  # Required permission to perform GitHub Action actions/checkout
+  id-token: write
+
+jobs:
+
+  deploy:
+    environment: Dev
+    name: 'Validate VNet Deployment'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v3
+      
+      # Authenticate with Azure via OIDC Federated Credential
+      - name: 'Azure Authentication'
+        uses: Azure/login@v1
+        with:
+          allow-no-subscriptions: true
+          client-id: ${{ secrets.CLIENT_ID }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          subscription-id: ${{ secrets.SUBSCRIPTION_ID }}
+
+      # Validate VNet Deployment with Azure CLI
+      - name: 'Validate VNet Deployment with Azure CLI'
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az network vnet list -g rg-demo-Dev
