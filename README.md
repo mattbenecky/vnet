@@ -9,6 +9,8 @@ This provides a sample virtual network to enable Azure resources to securely com
 - Route network traffic
 - Virtual network integration for Azure services
 
+![Subnets](docs/images/subnets.png)
+
 ## Getting Started
 
 1. Fork this repository into your account.
@@ -42,6 +44,8 @@ When creating a VNet, it is recommended that you use the address ranges enumerat
 ![VNet](docs/images/vnet.png)
 
 1. Run GitHub Actions workflow ```Deploy VNet```
+
+![Workflow](docs/images/workflow.png)
 
 ## Cleaning Up
 
