@@ -17,7 +17,7 @@ This provides a sample virtual network to enable Azure resources to securely com
 
 ```COPY``` the following line 👇
 ```
-curl -LJO https://raw.githubusercontent.com/mattbenecky/vnet/main/setup.sh && chmod +x setup.sh && ./setup.sh
+curl -LJO https://raw.githubusercontent.com/mattbenecky/vnet/main/src/infra/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 ```PASTE``` in [Cloud Shell](https://shell.azure.com/bash) & press ```ENTER```
 
