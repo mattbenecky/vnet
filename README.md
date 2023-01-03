@@ -40,3 +40,5 @@ When creating a VNet, it is recommended that you use the address ranges enumerat
 ```192.168.0.0 - 192.168.255.255```
 
 ![VNet](docs/images/vnet.png)
+
+1. Run GitHub Actions workflow ```Deploy VNet```
