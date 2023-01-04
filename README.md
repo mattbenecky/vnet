@@ -1,4 +1,4 @@
-# Virtual Network (VNet)
+# Create a Virtual Network (VNet)
 
 This provides a sample virtual network to enable Azure resources to securely communicate with each other, the internet, and on-premises networks.
 
